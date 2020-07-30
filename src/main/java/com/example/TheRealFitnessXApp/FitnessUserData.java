@@ -21,9 +21,9 @@ public class FitnessUserData {
     private int height;
     private String gender;
 
-    private int waterIntake;
+    private float waterIntake;
     private int dailySteps;
-    private int carloriesBurned;
+    private int caloriesBurned;
 
     public FitnessUserData(){};
 
@@ -36,10 +36,10 @@ public class FitnessUserData {
         this.gender = gender;
     }
 
-    public FitnessUserData(int waterIntake, int dailySteps, int carloriesBurned) {
+    public FitnessUserData(int waterIntake, int dailySteps, int caloriesBurned) {
         this.waterIntake = waterIntake;
         this.dailySteps = dailySteps;
-        this.carloriesBurned = carloriesBurned;
+        this.caloriesBurned = caloriesBurned;
     }
 
     public UUID getId() {
@@ -98,11 +98,11 @@ public class FitnessUserData {
         this.gender = gender;
     }
 
-    public int getWaterIntake() {
+    public float getWaterIntake() {
         return waterIntake;
     }
 
-    public void setWaterIntake(int waterIntake) {
+    public void setWaterIntake(float waterIntake) {
         this.waterIntake = waterIntake;
     }
 
@@ -114,12 +114,12 @@ public class FitnessUserData {
         this.dailySteps = dailySteps;
     }
 
-    public int getCarloriesBurned() {
-        return carloriesBurned;
+    public int getCaloriesBurned() {
+        return caloriesBurned;
     }
 
-    public void setCarloriesBurned(int carloriesBurned) {
-        this.carloriesBurned = carloriesBurned;
+    public void setCaloriesBurned(int carloriesBurned) {
+        this.caloriesBurned = carloriesBurned;
     }
 
 

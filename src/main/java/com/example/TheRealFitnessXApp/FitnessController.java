@@ -47,7 +47,7 @@ public class FitnessController {
 
         fitnessToEdit.setWaterIntake(fitnessStuff.getWaterIntake());
         fitnessToEdit.setDailySteps(fitnessStuff.getDailySteps());
-        fitnessToEdit.setCarloriesBurned(fitnessStuff.getCarloriesBurned());
+        fitnessToEdit.setCaloriesBurned(fitnessStuff.getCaloriesBurned());
 
         return repository.save(fitnessToEdit);
     }
