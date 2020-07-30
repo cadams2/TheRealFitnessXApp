@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/fitnexxappx")
+@RequestMapping("/fitnessappx")
 public class FitnessController {
 
     @Autowired
