@@ -25,6 +25,10 @@ public class FitnessUserData {
     private int dailySteps;
     private int caloriesBurned;
 
+    private float recordedWaterIntake;
+    private int recordedDailySteps;
+    private int recordedCaloriesBurned;
+
     public FitnessUserData(){};
 
     public FitnessUserData(String firstName, String lastName, String email, int weight, int height, String gender){
@@ -36,10 +40,13 @@ public class FitnessUserData {
         this.gender = gender;
     }
 
-    public FitnessUserData(int waterIntake, int dailySteps, int caloriesBurned) {
+    public FitnessUserData(float waterIntake, int dailySteps, int caloriesBurned, float recordedWaterIntake, int recordedDailySteps, int recordedCaloriesBurned) {
         this.waterIntake = waterIntake;
         this.dailySteps = dailySteps;
         this.caloriesBurned = caloriesBurned;
+        this.recordedWaterIntake = recordedWaterIntake;
+        this.recordedDailySteps = recordedDailySteps;
+        this.recordedCaloriesBurned = recordedCaloriesBurned;
     }
 
     public UUID getId() {
@@ -122,7 +129,29 @@ public class FitnessUserData {
         this.caloriesBurned = carloriesBurned;
     }
 
+    public float getRecordedWaterIntake() {
+        return recordedWaterIntake;
+    }
 
+    public void setRecordedWaterIntake(float recordedWaterIntake) {
+        this.recordedWaterIntake = recordedWaterIntake;
+    }
+
+    public int getRecordedDailySteps() {
+        return recordedDailySteps;
+    }
+
+    public void setRecordedDailySteps(int recordedDailySteps) {
+        this.recordedDailySteps = recordedDailySteps;
+    }
+
+    public int getRecordedCaloriesBurned() {
+        return recordedCaloriesBurned;
+    }
+
+    public void setRecordedCaloriesBurned(int recordedCaloriesBurned) {
+        this.recordedCaloriesBurned = recordedCaloriesBurned;
+    }
 
 
 }
