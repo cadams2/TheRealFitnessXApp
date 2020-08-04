@@ -10,8 +10,8 @@ import java.util.UUID;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/fitnessappx")
-public class FitnessController {
+@RequestMapping("/fitnessuser")
+public class FitnessUserController {
 
     @Autowired
     FitnessRepository repository;
