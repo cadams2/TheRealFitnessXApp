@@ -20,7 +20,7 @@ public class FitnessProgressController {
     @GetMapping("/{userId}")
     public List<FitnessUserProgress> getWeeklyProgress(@PathVariable("userId") FitnessUserData user) {
 
-        return  repository.findTop7ByUserOrderByCreated(user);
+        return  repository.findTop7ByUserOrderByCreatedDesc(user);
     }
 
     @PostMapping

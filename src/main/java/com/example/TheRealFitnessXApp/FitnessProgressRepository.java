@@ -10,5 +10,5 @@ import java.util.UUID;
 @Repository
 public interface FitnessProgressRepository extends JpaRepository<FitnessUserProgress, UUID> {
 
-    public List<FitnessUserProgress> findTop7ByUserOrderByCreated(FitnessUserData user) ;
+    public List<FitnessUserProgress> findTop7ByUserOrderByCreatedDesc(FitnessUserData user) ;
 }
